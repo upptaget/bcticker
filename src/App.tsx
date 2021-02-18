@@ -19,7 +19,7 @@ const getBCData = async (): Promise<Currencies> => {
 	return await (await fetch('https://blockchain.info/ticker')).json();
 };
 
-const INTERVAL_TIME = 20000; // 20s
+const INTERVAL_TIME = 10000; // 20s
 
 const App = () => {
 	const [currency, setCurrency] = useState('USD');
